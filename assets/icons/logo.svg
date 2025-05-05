@@ -1,0 +1,9 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Circular background -->
+  <circle cx="60" cy="60" r="60" fill="#5B6EF7" />
+  
+  <!-- H.I. text -->
+  <path d="M30 35H45V55H75V35H90V85H75V65H45V85H30V35Z" fill="white" />
+  <path d="M95 45H110V50H95V45Z" fill="white" />
+  <path d="M95 60H110V65H95V60Z" fill="white" />
+</svg>
