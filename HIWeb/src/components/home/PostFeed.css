@@ -1,0 +1,29 @@
+.post-feed {
+  padding: var(--spacing-md) 0;
+}
+
+.post-feed--empty {
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.post-feed__empty-state {
+  text-align: center;
+  color: var(--text-muted);
+  padding: var(--spacing-xl);
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: var(--radius-md);
+  width: 100%;
+}
+
+.post-feed__empty-state h3 {
+  margin-bottom: var(--spacing-md);
+  font-size: var(--text-lg);
+  color: var(--text-secondary);
+}
+
+.post-feed__empty-state p {
+  font-size: var(--text-md);
+}
