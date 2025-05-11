@@ -1,0 +1,34 @@
+.motivational-header {
+  margin-top: var(--spacing-xs);
+  height: 24px; /* Fixed height to prevent layout shifts */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.motivational-header__text {
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--highlight-color);
+  font-style: italic;
+  margin: 0;
+  transition: opacity 0.5s ease;
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+@media (max-width: 768px) {
+  .motivational-header {
+    height: 20px;
+  }
+  
+  .motivational-header__text {
+    font-size: var(--text-xs);
+  }
+}

@@ -1,0 +1,106 @@
+.navigation-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(10, 24, 69, 0.95);
+  backdrop-filter: blur(8px);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: var(--spacing-sm) 0;
+  z-index: 10;
+}
+
+.navigation-bar__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-xl);
+  position: relative;
+}
+
+.navigation-bar__link {
+  color: var(--text-secondary);
+  font-size: var(--text-md);
+  font-weight: 600;
+  text-decoration: none;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+}
+
+.navigation-bar__link:hover {
+  color: var(--white-color);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.navigation-bar__link--active {
+  color: var(--white-color);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.navigation-bar__filter-btn {
+  position: absolute;
+  right: var(--spacing-xl);
+  bottom: 100%;
+  transform: translateY(-20px);
+  background-color: var(--accent-color);
+  color: var(--white-color);
+  border: none;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-md);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.navigation-bar__filter-btn:hover {
+  background-color: var(--highlight-color);
+  transform: translateY(-24px);
+  box-shadow: var(--shadow-lg);
+}
+
+.navigation-bar__filter-btn--active {
+  background-color: var(--highlight-color);
+  transform: translateY(-24px) rotate(45deg);
+}
+
+.navigation-bar__filter-icon {
+  width: 24px;
+  height: 24px;
+  fill: var(--white-color);
+  transition: all var(--transition-fast);
+}
+
+@media (max-width: 768px) {
+  .navigation-bar__container {
+    padding: 0 var(--spacing-md);
+  }
+  
+  .navigation-bar__link {
+    font-size: var(--text-sm);
+    padding: var(--spacing-xs) var(--spacing-sm);
+  }
+  
+  .navigation-bar__filter-btn {
+    right: var(--spacing-md);
+    width: 40px;
+    height: 40px;
+    transform: translateY(-16px);
+  }
+  
+  .navigation-bar__filter-btn:hover,
+  .navigation-bar__filter-btn--active {
+    transform: translateY(-20px) rotate(45deg);
+  }
+  
+  .navigation-bar__filter-icon {
+    width: 20px;
+    height: 20px;
+  }
+}

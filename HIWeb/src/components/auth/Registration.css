@@ -1,0 +1,107 @@
+.registration {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 450px;
+  margin: 0 auto;
+  padding: var(--spacing-xl);
+}
+
+.registration__logo-container {
+  margin-bottom: var(--spacing-xl);
+  padding: var(--spacing-lg);
+}
+
+.registration__logo {
+  width: 80px;
+  height: 80px;
+}
+
+.registration__title {
+  font-size: var(--text-3xl);
+  margin-bottom: var(--spacing-md);
+  color: var(--white-color);
+  text-align: center;
+}
+
+.registration__tagline {
+  font-size: var(--text-md);
+  color: var(--highlight-color);
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+  font-style: italic;
+}
+
+.registration__form {
+  width: 100%;
+}
+
+.registration__form-group {
+  margin-bottom: var(--spacing-lg);
+}
+
+.registration__label {
+  display: block;
+  margin-bottom: var(--spacing-xs);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.registration__input {
+  width: 100%;
+  padding: var(--spacing-md);
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-md);
+  font-size: var(--text-md);
+  color: var(--text-primary);
+  transition: all var(--transition-fast);
+}
+
+.registration__input:focus {
+  outline: none;
+  border-color: var(--accent-color);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.registration__input--error {
+  border-color: #e53e3e;
+}
+
+.registration__hint {
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+  margin-top: var(--spacing-xs);
+}
+
+.registration__error {
+  color: #e53e3e;
+  font-size: var(--text-xs);
+  margin-top: var(--spacing-xs);
+}
+
+.registration__error--form {
+  width: 100%;
+  background-color: rgba(229, 62, 62, 0.1);
+  border: 1px solid rgba(229, 62, 62, 0.3);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .registration {
+    padding: var(--spacing-lg) var(--spacing-md);
+  }
+  
+  .registration__logo {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .registration__title {
+    font-size: var(--text-2xl);
+  }
+}
